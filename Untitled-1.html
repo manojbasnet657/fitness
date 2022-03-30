@@ -1,0 +1,38 @@
+<div>
+    <div class="slider">
+
+        <div class="slides">
+                <input type="radio" name="radio-btn" id="radio-btn1">
+                <input type="radio" name="radio-btn" id="radio-btn2" >
+                <input type="radio" name="radio-btn" id="radio-btn3">
+                <input type="radio" name="radio-btn" id="radio-btn4">
+            
+            <div class="slides first" id="first">
+                <img src="1.jpg" alt="">
+            </div>
+            <div class="slides second">
+                <img src="2.jpg" alt="">
+            </div>
+            <div class="slides third">
+                <img src="3.jpg" alt="">
+            </div>
+            <div class="slides fourth">
+                <img src="4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var count = 1;
+        setInterval(()=>{
+            document.getElementById('radio-btn'+count).checked=true;
+            count++;
+            if(count>4){
+                count=1;
+            }
+        },2500)
+
+
+    </script>
+    
+</div>

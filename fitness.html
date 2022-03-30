@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fitness.css" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <span>Fitness</span>
+      </nav>
+      <nav class="navbar">
+        <span class="b"><a href="">HOME</a></span>
+        <span class="b"><a href="">PRODUCT</a></span>
+        <span class="b"><a href="about.html">ABOUE US</a></span>
+        <span class="b"><a href="">CONTACT US</a></span>
+        <span class="b"><a href="">DELIVERY</a></span>
+      </nav>
+    </header>
+    <main>
+      <div class="pic">
+        <span
+          >Fitness Care provides supports and braces of the highest quality,
+          many of which have been designed in association with NHS
+          Clinicians.</span
+        >
+      </div>
+      <!-- carasoul -->
+
+      <div>
+        <div class="slider">
+          <div class="slides">
+            <input
+              style="display: none"
+              type="radio"
+              name="radio-btn"
+              id="radio-btn1"
+            />
+            <input
+              style="display: none"
+              type="radio"
+              name="radio-btn"
+              id="radio-btn2"
+            />
+            <input
+              style="display: none"
+              type="radio"
+              name="radio-btn"
+              id="radio-btn3"
+            />
+            <input
+              style="display: none"
+              type="radio"
+              name="radio-btn"
+              id="radio-btn4"
+            />
+
+            <div class="slides first" id="first">
+              <img src="./pic/knee.jpg" alt="" />
+            </div>
+            <div class="slides second">
+              <img src="./pic/watch.jpg" alt="" />
+            </div>
+            <div class="slides third">
+              <img src="./pic/s.webp" alt="" />
+            </div>
+            <div class="slides fourth">
+              <img src="./pic/gl.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1>ABOUT US</h1>
+          <div class="upperabout">
+            <p class="about">
+              Fitness Care provides supports and braces of the highest quality,
+              many of which have been designed in association with NHS
+              Clinicians. Since its inception the company has been working
+              closely with medical technicians with the private and NHS sector
+              as well as industry experts to develop products that improve
+              people’s mobility and quality of life.
+            </p>
+          </div>
+        </div>
+        <script>
+          var count = 1;
+          setInterval(() => {
+            document.getElementById("radio-btn" + count).checked = true;
+            count++;
+            if (count > 4) {
+              count = 1;
+            }
+          }, 2500);
+        </script>
+        <h1 class="product">PRODUCTS</h1>
+      </div>
+
+      <div class="cat">
+        <!-- div#item$.item*9 -->
+        <div id="item1" class="item">
+          <div>
+            <a href=""
+              ><img src="pic/f.webp" height="400px" width="400px" alt=""
+            /></a>
+          </div>
+        </div>
+        <div id="item2" class="item">
+          <a href=""
+            ><img src="pic/shu.jpg" height="400px" width="400px" alt=""
+          /></a>
+        </div>
+        <div id="item3" class="item">
+          <a href=""
+            ><img src="pic/n.webp" height="400px" width="400px" alt=""
+          /></a>
+        </div>
+        <div id="item4" class="item">
+          <a href=""
+            ><img src="pic/gl.jpg" height="400px" width="400px" alt=""
+          /></a>
+        </div>
+        <div id="item5" class="item">
+          <a href=""
+            ><img src="pic/knee.jpg" height="400px" width="400px" alt=""
+          /></a>
+        </div>
+        <div id="item6" class="item">
+          <a href="back.html"
+            ><img src="pic/back2.jpg" height="400px" width="400px" alt=""
+          /></a>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

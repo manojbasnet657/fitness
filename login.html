@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+</head>
+<!-- <link rel="stylesheet" href="project2.html"> -->
+<script src="validate.js"></script>
+<style>
+    body {
+        background-image: url("mb.jpg");
+        background-position: right;
+    }
+    
+    .login-box {
+        margin: 200px 570px;
+        border: 4px solid black;
+        background-color: greenyellow;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    input:focus {
+        box-shadow: 5px 4px;
+        text-align: center;
+        outline: none;
+        background-color: brown;
+    }
+    
+    h1 {}
+    
+    button {
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <a href="project2.html"></a>
+    <div class="login-box">
+        <form action="POST" id="login-form" onsubmit="event.preventDefault();validatelogin()">
+            <table>
+                <tr>
+                    <td>
+                        <h1>Login Page</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>User name</td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="input" id="user-name" name="user-name"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                </tr>
+                <tr>
+                    <td><input type="password" class="input" id="password" name="password"></td>
+                </tr>
+
+                <tr>
+                    <td><br><button type="submit" id="button">Login</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
